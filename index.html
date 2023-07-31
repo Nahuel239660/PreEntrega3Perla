@@ -15,7 +15,13 @@
         <img src="./assets/icon/logo.jpg" alt="logo-ppsupport" width="100px">
       </a>
       <a href="./pages/quienessomos.html">Quienes Somos</a>
-      <a href="./pages/servicios.html">Servicios</a>
+      <div class="dropdown">
+        <button class="dropbtn">Servicios</button>
+        <div class="dropdown-content">
+          <a href="./pages/asesoramientoinformatico.html">Asesoramiento Informatico</a>
+          <a href="#">Servicio 2</a>
+          <a href="#">Servicio 3</a>        </div>
+      </div>
       <a href="./pages/contacto.html">Contacto</a>
       <a href="./pages/sumatealEquipo.html">Sumate al equipo</a>
     </nav>
@@ -33,5 +39,24 @@
       </a>
     </div>
   </footer>
+  <script>
+    // Obtén el elemento del botón del menú desplegable y el contenido del menú
+    const dropdownBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+  
+    // Agrega un evento clic al botón para mostrar u ocultar el menú desplegable
+    dropdownBtn.addEventListener('click', () => {
+      dropdownContent.classList.toggle('show');
+    });
+  
+    // Cierra el menú desplegable si el usuario hace clic fuera de él
+    window.addEventListener('click', (event) => {
+      if (!event.target.matches('.dropbtn')) {
+        if (dropdownContent.classList.contains('show')) {
+          dropdownContent.classList.remove('show');
+        }
+      }
+    });
+  </script>  
 </body>
 </html>
