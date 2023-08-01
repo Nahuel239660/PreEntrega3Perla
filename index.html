@@ -7,10 +7,12 @@
   <link rel="shortcut icon" href="./assets/icon/logo.jpg" type="image/x-icon">
   <link rel="stylesheet" href="css/estilos.css">
   <title>Document</title>
+ 
+
 </head>
 <body>
   <div class="wrapper">
-    <nav>
+    <nav class="sticky-nav">
       <a href="#">
         <img src="./assets/icon/logo.jpg" alt="logo-ppsupport" width="100px">
       </a>
@@ -19,9 +21,11 @@
         <button class="dropbtn">Servicios</button>
         <div class="dropdown-content">
           <a href="./pages/asesoramientoinformatico.html">Asesoramiento Informatico</a>
-          <a href="#">Servicio 2</a>
-          <a href="#">Servicio 3</a>        </div>
-      </div>
+          <a href="./pages/administracionderedes.html">Administracion de Redes</a>
+          <a href="./pages/facturaelectronica.html">Factura Electronica</a>      
+          <a href="./pages/desarrollo.html">Desarrollo a Medida</a>
+        </div>
+      </div>  
       <a href="./pages/contacto.html">Contacto</a>
       <a href="./pages/sumatealEquipo.html">Sumate al equipo</a>
     </nav>
@@ -39,24 +43,6 @@
       </a>
     </div>
   </footer>
-  <script>
-    // Obtén el elemento del botón del menú desplegable y el contenido del menú
-    const dropdownBtn = document.querySelector('.dropbtn');
-    const dropdownContent = document.querySelector('.dropdown-content');
-  
-    // Agrega un evento clic al botón para mostrar u ocultar el menú desplegable
-    dropdownBtn.addEventListener('click', () => {
-      dropdownContent.classList.toggle('show');
-    });
-  
-    // Cierra el menú desplegable si el usuario hace clic fuera de él
-    window.addEventListener('click', (event) => {
-      if (!event.target.matches('.dropbtn')) {
-        if (dropdownContent.classList.contains('show')) {
-          dropdownContent.classList.remove('show');
-        }
-      }
-    });
-  </script>  
+  <script src="./js/funcionalidades.js"></script>
 </body>
 </html>
