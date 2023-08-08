@@ -1,16 +1,15 @@
-/* Nuevos estilos para centrar el contenido en la sección */
+// servicios.scss
+
 .centrar-section {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Estilos para mejorar la legibilidad y la experiencia del usuario */
 p {
   line-height: 1.6;
   margin-bottom: 15px;
 }
 
-/* Estilos específicos para la página de servicio1 (Asesoramiento Informático) */
 .servicio-imagen {
   width: 100%;
   max-width: 600px;
@@ -30,16 +29,6 @@ ul {
   margin-left: 30px;
 }
 
-/* Estilos adicionales específicos para la página de Factura Electrónica y Desarrollo */
-.servicio-imagen {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
-/* Estilos para la sección de logos de lenguajes */
 .logos-lenguajes {
   display: flex;
   justify-content: space-between;
